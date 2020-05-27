@@ -33,7 +33,12 @@ async function Program() {
             case "1":
                 let country = await askQuestion("Which country do you want the stats for Covid-19: ");
                 let response = await axios.get(`https://api.covid19api.com/live/country/${country}/status/confirmed`);
-                console.log(response);
+                let dateResults = response.data
+                let mostRecentResult = dateResults[dateResults.length -1];
+                console.log(mostRecentResult)
+                // let response = await axios.get(`https://api.covid19api.com/live/country/${country}/status/confirmed/date/2020-03-21T13:13:30Z`);
+                // let response = await axios.get(`https://api.covid19api.com/live/country/${country}/status/confirmed/date/2020-03-21T13:13:30Z`)
+                // console.log(response.data);
                 break;
             // case "2":
             //     let country = await askQuestion("Which country do you want the stats for Covid-19: ");
