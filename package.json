@@ -1,0 +1,25 @@
+{
+  "name": "console-project-group-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node.\\.src.\\GetCovid19.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukeParkerTAFE/console-project-group-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LukeParkerTAFE/console-project-group-2/issues"
+  },
+  "homepage": "https://github.com/LukeParkerTAFE/console-project-group-2#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chai": "^4.2.0",
+    "mocha": "^7.2.0"
+  }
+}
